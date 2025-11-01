@@ -1,8 +1,8 @@
 abstract class Failure {
- final String message;
- final int statusCode;
 
  Failure(this.message, this.statusCode);
+ final String message;
+ final int statusCode;
 }
 
 class ServerFailure extends Failure {

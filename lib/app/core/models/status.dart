@@ -1,5 +1,5 @@
-import 'package:equatable/equatable.dart';
 import 'package:engaz_task/app/core/models/generic_exception.dart';
+import 'package:equatable/equatable.dart';
 
 /// Represents a type-safe state management
 /// mechanism for handling data loading states.

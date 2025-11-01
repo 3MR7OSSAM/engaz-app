@@ -36,7 +36,6 @@ final GoRouter appRouter = GoRouter(
           name: MenuScreen.name,
           builder: (context, state) {
             // Extract path parameters and forward them to the screen
-            // `GoRouterState.pathParameters` is used to access named path params
             final vendorId = state.pathParameters['vendorId'] ?? '';
             final branchId = state.pathParameters['branchId'] ?? '';
             return MenuScreen(vendorId: vendorId, branchId: branchId);

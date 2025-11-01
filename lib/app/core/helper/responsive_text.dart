@@ -1,6 +1,10 @@
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-double responsiveFontSize(double desktopSize, double tabletSize, double mobileSize) {
+double responsiveFontSize(
+  double desktopSize,
+  double tabletSize,
+  double mobileSize,
+) {
   if (ScreenUtil().screenWidth >= 1000) {
     // Desktop
     return desktopSize.sp * 0.9;
@@ -12,5 +16,3 @@ double responsiveFontSize(double desktopSize, double tabletSize, double mobileSi
     return mobileSize.sp * 0.7;
   }
 }
-
-

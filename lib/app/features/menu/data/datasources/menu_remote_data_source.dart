@@ -4,6 +4,7 @@ import 'package:engaz_task/app/features/menu/domain/models/menu_api_response.dar
 import 'package:injectable/injectable.dart';
 
 /// Abstract contract for Menu remote data source.
+// ignore: one_member_abstracts
 abstract class MenuRemoteDataSource {
   /// Fetches menu data for a specific vendor and branch.
   ///

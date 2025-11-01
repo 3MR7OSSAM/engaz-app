@@ -1,8 +1,9 @@
 import 'dart:async';
-import 'package:flutter/foundation.dart';
-import 'package:isar/isar.dart';
+
 import 'package:engaz_task/app/core/isar/cache_model.dart';
 import 'package:engaz_task/app/core/isar/isar_service.dart';
+import 'package:flutter/foundation.dart';
+import 'package:isar/isar.dart';
 
 /// An abstract base class for managing local
 ///  data persistence using Isar database

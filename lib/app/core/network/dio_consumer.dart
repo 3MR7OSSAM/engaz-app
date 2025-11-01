@@ -185,21 +185,26 @@ class DioConsumer implements ApiConsumer {
 
       case DioExceptionType.badCertificate:
         return ServerException(
-            'Bad certificate - please check your connection security',
-            statusCode);
+          'Bad certificate - please check your connection security',
+          statusCode,
+        );
 
       case DioExceptionType.cancel:
         return ServerException('Request was cancelled', statusCode);
 
       case DioExceptionType.connectionError:
         return const ServerException(
-            'No internet connection - working offline', 0);
+          'No internet connection - working offline',
+          0,
+        );
 
       case DioExceptionType.unknown:
         // ignore: use_if_null_to_convert_nulls_to_bools
         if (error.message?.contains('SocketException') == true) {
           return const ServerException(
-              'No internet connection - working offline', 0);
+            'No internet connection - working offline',
+            0,
+          );
         }
         return ServerException('Unexpected error occurred', statusCode);
     }

@@ -53,29 +53,5 @@ class MenuItemModel {
     );
   }
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is MenuItemModel &&
-          runtimeType == other.runtimeType &&
-          category == other.category &&
-          name == other.name &&
-          description == other.description &&
-          price == other.price &&
-          discount == other.discount &&
-          imageUrl == other.imageUrl;
 
-  @override
-  int get hashCode =>
-      category.hashCode ^
-      name.hashCode ^
-      description.hashCode ^
-      price.hashCode ^
-      discount.hashCode ^
-      imageUrl.hashCode;
-
-  @override
-  String toString() {
-    return 'MenuItemModel(category: $category, name: $name, description: $description, price: $price, discount: $discount, imageUrl: $imageUrl)';
-  }
 }

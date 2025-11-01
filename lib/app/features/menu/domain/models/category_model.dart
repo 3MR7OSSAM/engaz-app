@@ -23,17 +23,5 @@ class CategoryModel {
     );
   }
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is CategoryModel &&
-          runtimeType == other.runtimeType &&
-          name == other.name &&
-          count == other.count;
 
-  @override
-  int get hashCode => name.hashCode ^ count.hashCode;
-
-  @override
-  String toString() => 'CategoryModel(name: $name, count: $count)';
 }

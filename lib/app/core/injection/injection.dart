@@ -1,6 +1,6 @@
+import 'package:engaz_task/app/core/injection/injection.config.dart';
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
-import 'package:engaz_task/app/core/injection/injection.config.dart';
 
 final getIt = GetIt.instance;
 
