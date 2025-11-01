@@ -1,0 +1,7 @@
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logos/engaz.jpg"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/logos/engaz.jpg"
+  min_sdk_android: 21

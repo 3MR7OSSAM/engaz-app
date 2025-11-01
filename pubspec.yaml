@@ -9,8 +9,10 @@ environment:
 dependencies:
   bitsdojo_window: ^0.1.6
   bloc: ^8.1.4
+  carousel_slider: ^5.1.1
   connectivity_plus: ^6.1.0
   dartx: ^1.2.0
+  dio: ^5.8.0+1
   easy_localization: ^3.0.8
   equatable: ^2.0.7
   file_picker: ^8.1.6
@@ -37,8 +39,9 @@ dependencies:
   logger: ^2.6.2
   path: ^1.9.0
   path_provider: ^2.1.4
+  pretty_dio_logger: ^1.4.0
+  shimmer: ^3.0.0
   sidebar_with_animation: ^0.0.3
-  window_manager: ^0.4.3
 
 dependency_overrides:
   analyzer: ^6.0.0
@@ -47,6 +50,7 @@ dev_dependencies:
   bloc_test: ^9.1.7
   build_runner: ^2.4.15
   flutter_gen_runner: null
+  flutter_launcher_icons: ^0.14.4
   flutter_test:
     sdk: flutter
   injectable_generator: null
@@ -56,11 +60,10 @@ dev_dependencies:
 
 flutter_gen:
   output: lib/app/core/assets_gen/
-  line_length: 100
+  line_length: 80
 
 flutter:
   uses-material-design: true
   generate: true
-  # assets:
-  #   - assets/images/
-  #   - assets/Illustrations/
+  assets:
+    - assets/logos/
